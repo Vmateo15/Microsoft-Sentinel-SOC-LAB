@@ -16,13 +16,13 @@ SecurityEvent
 | summarize FailedAttempts = count() by IpAddress, Account
 | sort by FailedAttempts desc
 
-Findings
+##Findings
 
 The query showed repeated failed authentication attempts against Administrator-related accounts from multiple external IP addresses.
 
 One source IP generated more than 3,000 failed logon attempts, which is highly suspicious and consistent with automated brute-force activity.
 
-Detection Logic
+##Detection Logic
 
 To identify concentrated failed login activity within a short time window, I used:
 
@@ -33,11 +33,11 @@ SecurityEvent
 
 This flags cases where the same source IP and account combination has 10 or more failed logon attempts within five minutes.
 
-Analyst Assessment
+##Analyst Assessment
 
 The volume and repetition of failed logon attempts indicate likely automated credential guessing against the exposed Windows system.
 
-Recommended Response
+##Recommended Response
 
 Review the targeted account.
 Investigate the source IP address.
