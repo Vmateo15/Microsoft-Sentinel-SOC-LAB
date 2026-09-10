@@ -1,0 +1,4 @@
+SecurityEvent
+| where EventID == 4625
+| summarize FailedAttempts = count() by IpAddress, Account
+| sort by FailedAttempts desc
