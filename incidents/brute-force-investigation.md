@@ -48,6 +48,7 @@ A custom Azure Monitor log-search alert was configured with the name:
 Possible Brute Force Attack
 
 The alert was designed to identify 10 or more failed Windows logon attempts from the same source IP and account within a five-minute window.
+
 Severity: Warning
 
 ## Analyst Assessment
