@@ -1,16 +1,3 @@
-Findings
-The query returned a scheduled task creation event associated with SOC-LAB-PERSISTENCE.
-The event showed the affected computer, the account associated with the event, the Windows activity description, and the scheduled task event data.
-Analyst Assessment
-Scheduled tasks can be used for legitimate administration, but unexpected scheduled task creation may indicate persistence.
-The activity should be reviewed to determine whether the task was expected and authorized.
-Recommended Response
-Review the scheduled task name and configuration.
-Identify the account associated with the task creation event.
-Inspect the command or program configured to run.
-Determine whether the scheduled task was expected and authorized.
-Remove or disable the task if it is determined to be unauthorized.
-
 # Microsoft Sentinel SOC Lab - Final Report
 
 ## Executive Summary
