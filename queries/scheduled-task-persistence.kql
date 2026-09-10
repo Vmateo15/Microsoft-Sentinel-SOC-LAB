@@ -1,0 +1,5 @@
+SecurityEvent
+| where EventID == 4698
+| where EventData contains "SOC-LAB-PERSISTENCE"
+| project TimeGenerated, Account, Computer, Activity, EventData
+| sort by TimeGenerated desc
