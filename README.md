@@ -79,7 +79,8 @@ Microsoft-Sentinel-SOC-LAB/
 ├── screenshots/
 
 └── README.md
+```
 
-Disclaimer
+## Disclaimer
 
 This project was performed in a controlled lab environment for cybersecurity education and SOC analyst training.
