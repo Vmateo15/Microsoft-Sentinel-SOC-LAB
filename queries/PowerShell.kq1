@@ -1,0 +1,6 @@
+SecurityEvent
+| where EventID == 4688
+| where NewProcessName contains "powershell"
+| where CommandLine contains "-EncodedCommand" or CommandLine contains "-enc"
+| project TimeGenerated, Account, Computer, NewProcessName, CommandLine, ParentProcessName
+| sort by TimeGenerated desc
