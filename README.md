@@ -6,7 +6,7 @@ In this lab, I deployed a Windows virtual machine in Microsoft Azure and connect
 
 I used Windows Security Event logs and Kusto Query Language (KQL) to investigate authentication activity, PowerShell execution, account creation, privilege escalation, and persistence-related behavior.
 
-The goal of this project was to simulate the investigation workflow of a Tier 1 SOC Analyst by reviewing logs, identifying suspicious activity, writing detection queries, and documenting findings.
+The goal of this project is to simulate the investigation workflow of a Tier 1 SOC Analyst by reviewing logs, identifying suspicious activity, writing detection queries, and documenting findings.
 
 ## Technologies Used
 
@@ -79,3 +79,7 @@ Microsoft-Sentinel-SOC-LAB/
 ├── screenshots/
 
 └── README.md
+
+Disclaimer
+
+This project was performed in a controlled lab environment for cybersecurity education and SOC analyst training.
