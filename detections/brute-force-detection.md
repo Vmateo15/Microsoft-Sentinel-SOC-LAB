@@ -50,3 +50,33 @@ The volume and repetition of failed logon attempts indicate likely automated cre
 - Restrict unnecessary remote access.
 
 - Enforce strong passwords and account lockout controls.
+
+
+## Investigation Details
+
+I reviewed the timing and characteristics of the failed authentication activity to determine whether the behavior was isolated or repeated over time.
+
+A first-seen and last-seen query showed sustained failed authentication attempts from multiple source IP addresses. One source generated thousands of failed logon attempts during the observed period.
+
+Detailed Event ID 4625 records showed LogonType 3, indicating network logon attempts. The events also included failure reason, status, and substatus fields that helped confirm repeated unsuccessful authentication activity.
+
+## IP Enrichment
+
+I investigated one of the high-volume source IP addresses, `79.140.30.89`.
+
+The IP lookup identified the address as associated with JSC Ufanet and geolocated it to Ufa, Russian Federation.
+
+IP geolocation alone does not prove malicious intent, but it provided additional context during the investigation.
+
+## Alert Rule Configuration
+
+I configured a custom log-search alert named `Possible Brute Force Attack`.
+
+The alert logic was designed to identify 10 or more failed Windows logon attempts from the same source IP and account within a five-minute window.
+
+Severity: Warning
+
+
+
+
+
