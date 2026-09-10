@@ -21,7 +21,7 @@ SecurityEvent
 ## Findings
 
 The query returned a scheduled task creation event associated with SOC-LAB-PERSISTENCE.
-The event showed the affected computer, the account associated with the event, the Windows activity description, and the scheduled task event data.
+The event showed the affected computer, the Windows activity description, and the scheduled task event data.
 
 ## Analyst Assessment
 
