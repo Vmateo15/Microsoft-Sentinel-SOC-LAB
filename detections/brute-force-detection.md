@@ -64,14 +64,14 @@ The volume and repetition of failed logon attempts indicate likely automated cre
 
 ## Recommended Response
 
-- Review the targeted account.
+ Review the targeted account.
 
-- Investigate the source IP address.
+ Investigate the source IP address.
 
-- Confirm whether any successful logons followed the failed attempts.
+ Confirm whether any successful logons followed the failed attempts.
 
-- Restrict unnecessary remote access.
+ Restrict unnecessary remote access.
 
-- Enforce strong passwords and account lockout controls.
+ Enforce strong passwords and account lockout controls.
 
 
