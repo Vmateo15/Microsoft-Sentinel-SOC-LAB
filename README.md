@@ -25,25 +25,59 @@ The goal of this project was to simulate the investigation workflow of a Tier 1 
 - Kusto Query Language (KQL)
 
 - PowerShell
+  
+## Detections Investigated
 
-## Security Events Investigated
+- Brute Force Authentication — Event ID 4625
 
-### 1. Brute Force / Failed Logon Attempts
+- Suspicious PowerShell Execution — Event ID 4688
 
-Windows Event ID: `4625`
+- New User Account Creation — Event ID 4720
 
-I investigated repeated failed logon attempts against the Azure Windows VM.
+- Privileged Group Membership Change — Event ID 4732
 
-The logs showed multiple external IP addresses repeatedly attempting to authenticate to Administrator-related accounts.
+- Scheduled Task Persistence — Event ID 4698
 
-Example KQL:
+## Skills Demonstrated
 
-```kql
+- SIEM investigation
 
-SecurityEvent
+- Microsoft Sentinel
 
-| where EventID == 4625
+- Azure Log Analytics
 
-| summarize FailedAttempts = count() by IpAddress, Account
+- KQL querying
 
-| sort by FailedAttempts desc
+- Windows Event ID analysis
+
+- Brute-force detection
+
+- PowerShell analysis
+
+- Privilege escalation detection
+
+- Persistence detection
+
+- Incident triage
+
+- SOC documentation
+
+## Repository Structure
+
+```text
+
+Microsoft-Sentinel-SOC-LAB/
+
+├── detections/
+
+├── docs/
+
+├── incidents/
+
+├── queries/
+
+├── report/
+
+├── screenshots/
+
+└── README.md
