@@ -58,8 +58,6 @@ The goal of this project was to simulate the investigation workflow of a Tier 1 
 
 - Persistence detection
 
-- Incident triage
-
 - SOC documentation
 
 ## Repository Structure
