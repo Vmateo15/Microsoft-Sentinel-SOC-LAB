@@ -52,11 +52,11 @@ This flags cases where the same source IP and account combination has 10 or more
 
 ## Alert Rule Configuration
 
-I configured a custom log-search alert named `Possible Brute Force Attack`.
+I configured the settings for a custom log search alert named `Possible Brute Force Attack`.
 
 The alert logic was designed to identify 10 or more failed Windows logon attempts from the same source IP and account within a five-minute window.
 
-Severity: Warning
+**Severity:** Warning
 
 ## Analyst Assessment
 
