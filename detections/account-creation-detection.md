@@ -28,7 +28,11 @@ The account creation events should be reviewed to determine whether the new acco
 
 ## Recommended Response
 Verify who created the new account.
+
 Confirm whether the account creation was authorized.
+
 Review the privileges and group memberships assigned to the new account.
+
 Check for related authentication or administrative activity around the same timestamp.
+
 Disable or remove the account if it is determined to be unauthorized.
