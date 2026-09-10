@@ -34,7 +34,11 @@ Because the query identified PowerShell execution using encoded-command syntax, 
 ## Recommended Response
 
 Review the full PowerShell command line.
+
 Identify the user account that executed the command.
+
 Review the parent process that launched PowerShell.
+
 Determine whether the activity was expected or authorized.
+
 Investigate related process creation events around the same timestamp.
