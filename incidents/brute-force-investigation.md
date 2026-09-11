@@ -23,7 +23,7 @@ The investigation included:
 - Investigating a high volume source IP address.
 - Creating detection logic for repeated failed logons within a five minute window.
 
-![Brute force failed logon results](../screenshots/brute-force-failed-logons.png)## IP Enrichment
+![Brute force failed logon results](../screenshots/brute-force-failed-logons.png)
 
 ## IP Enrichement
 
