@@ -6,7 +6,7 @@
 
 ## Objective
 
-Identify repeated failed Windows logon attempts that may indicate brute-force activity.
+Identify repeated failed Windows logon attempts that may indicate brute force activity.
 
 ## KQL Query
 
