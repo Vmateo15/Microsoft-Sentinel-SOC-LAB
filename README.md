@@ -4,7 +4,7 @@ Hands on SOC Lab using Microsoft Azure, Log Analytics, KQL, and Windows Security
 
 In this lab, I deployed a Windows virtual machine in Microsoft Azure and connected it to a Log Analytics workspace for centralized security monitoring.
 
-I used Windows Security Event logs and Kusto Query Language (KQL) to investigate authentication activity, PowerShell execution, account creation, privilege escalation, and persistence-related behavior.
+I used Windows Security Event logs and Kusto Query Language (KQL) to investigate authentication activity, PowerShell execution, account creation, privilege escalation, and persistence related behavior.
 
 The goal of this project is to simulate the investigation workflow of a Tier 1 SOC Analyst by reviewing logs, identifying suspicious activity, writing detection queries, and documenting findings.
 
