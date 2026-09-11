@@ -2,7 +2,7 @@
 
 ## Detection
 
-Windows user account creation activity — Event ID `4720`
+Windows user account creation activity Event ID `4720`
 
 ## Summary
 
