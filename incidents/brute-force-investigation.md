@@ -25,7 +25,7 @@ The investigation included:
 
 ![Brute force failed logon results](../screenshots/brute-force-failed-logons.png)
 
-## IP Enrichement
+## IP Enrichment
 
 One high volume source IP investigated was:
 
