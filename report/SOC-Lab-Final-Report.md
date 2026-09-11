@@ -19,7 +19,7 @@ A Windows virtual machine was monitored through a Log Analytics workspace. Secur
 
 ## Security Events Investigated
 
-### Event ID 4625 - Failed Logon
+### Event ID 4625 = Failed Logon
 
 Repeated failed Windows logon attempts were detected against Administrator related accounts from multiple external IP addresses.
 
@@ -27,19 +27,19 @@ One source IP generated more than 3,000 failed authentication attempts.
 
 The activity was consistent with automated credential guessing behavior.
 
-### Event ID 4688 - Process Creation
+### Event ID 4688 = Process Creation
 
 A PowerShell process creation event was identified using encoded command syntax.
 
 The activity was reviewed because encoded PowerShell commands can be used to obscure command execution.
 
-### Event ID 4720 - User Account Creation
+### Event ID 4720 = User Account Creation
 
 A Windows user account named `SOC-LAB-USER` was identified through Security Event logging.
 
 The event was reviewed to determine whether the account creation was expected and authorized.
 
-### Event ID 4732 - Local Group Membership Change
+### Event ID 4732 = Local Group Membership Change
 
 A local security group membership change was identified.
 
@@ -47,7 +47,7 @@ The results included membership changes involving `Builtin\Users` and `Builtin\A
 
 Unexpected additions to privileged groups may indicate privilege escalation or unauthorized administrative access.
 
-### Event ID 4698 - Scheduled Task Creation
+### Event ID 4698 = Scheduled Task Creation
 
 A Windows scheduled task named `SOC-LAB-PERSISTENCE` was identified.
 
