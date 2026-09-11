@@ -87,7 +87,7 @@ This detection identifies source IP and account combinations with 10 or more fai
 
 ## Alert Configuration
 
-A custom Azure Monitor log search alert was configured.
+The alert configuration was documented but not deployed because enabling it would have created recurring Azure charges.
 
  Alert name:
 
