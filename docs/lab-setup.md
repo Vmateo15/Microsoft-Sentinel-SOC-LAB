@@ -23,11 +23,11 @@ The `SecurityEvent` table was used to investigate Windows authentication, proces
 
 ## Security Events Used
 
-- Event ID 4625 — Failed Logon
-- Event ID 4688 — Process Creation
-- Event ID 4720 — User Account Creation
-- Event ID 4732 — Member Added to a Security-Enabled Local Group
-- Event ID 4698 — Scheduled Task Created
+- Event ID 4625 = Failed Logon
+- Event ID 4688 = Process Creation
+- Event ID 4720 = User Account Creation
+- Event ID 4732 = Member Added to a Security-Enabled Local Group
+- Event ID 4698 = Scheduled Task Created
 
 ## Investigation Workflow
 
