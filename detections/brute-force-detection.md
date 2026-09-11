@@ -28,7 +28,7 @@ One source IP generated more than 3,000 failed logon attempts, which is highly s
 
 I reviewed the timing and characteristics of the failed authentication activity to determine whether the behavior was isolated or repeated over time.
 
-A first-seen and last-seen query showed sustained failed authentication attempts from multiple source IP addresses. One source generated thousands of failed logon attempts during the observed period.
+A first seen and last-seen query showed sustained failed authentication attempts from multiple source IP addresses. One source generated thousands of failed logon attempts during the observed period.
 
 ![Brute Force First and Last Seen Analysis](../screenshots/brute-force-first-last-seen.png)
 
