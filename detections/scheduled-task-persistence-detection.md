@@ -2,7 +2,7 @@
 
 ## Event ID
 
-`4698` — A Scheduled Task Was Created
+`4698` = A Scheduled Task Was Created
 
 ## Objective
 
