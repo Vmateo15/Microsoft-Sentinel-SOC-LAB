@@ -2,7 +2,7 @@
 
 ## Event ID
 
-`4720` A User Account Was Created
+`4720` = A User Account Was Created
 
 ## Objective
 
