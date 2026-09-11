@@ -31,7 +31,7 @@ The event included the user account, computer name, PowerShell process path, com
 
 Encoded PowerShell commands can be used legitimately, but they are also commonly associated with obfuscated or suspicious command execution.
 
-Because the query identified PowerShell execution using encoded-command syntax, the activity should be reviewed to determine whether the command was expected and authorized.
+Because the query identified PowerShell execution using encoded command syntax, the activity should be reviewed to determine whether the command was expected and authorized.
 
 ## Recommended Response
 
