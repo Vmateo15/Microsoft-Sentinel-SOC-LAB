@@ -38,6 +38,22 @@ The goal of this project is to simulate the investigation workflow of a Tier 1 S
 
 - Scheduled Task Persistence — Event ID 4698
 
+## Investigation Reports
+
+- [Brute Force Investigation](incidents/brute-force-investigation.md)
+- [Suspicious PowerShell Investigation](incidents/powershell-investigation.md)
+- [New User Account Creation Investigation](incidents/account-creation-investigation.md)
+- [Privileged Group Membership Investigation](incidents/Privileged-group-membership-investigation.md)
+- [Scheduled Task Persistence Investigation](incidents/scheduled-task-persistence-investigation.md)
+
+## Detection Documentation
+
+- [Brute Force Detection](detections/brute-force-detection.md)
+- [PowerShell Detection](detections/powershell-detection.md)
+- [Account Creation Detection](detections/account-creation-detection.md)
+- [Privileged Group Membership Detection](detections/Privileged-group-membership-detection.md)
+- [Scheduled Task Persistence Detection](detections/Scheduled-task-persistence-detection.md)
+
 ## Skills Demonstrated
 
 - SIEM investigation
