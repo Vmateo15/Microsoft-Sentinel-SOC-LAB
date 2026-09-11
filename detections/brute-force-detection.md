@@ -46,6 +46,8 @@ IP geolocation alone does not prove malicious intent, but it provided additional
 
 ![Brute Force IP Enrichment](../screenshots/brute-force-ip-enrichment.png)## Detection Logic
 
+## Detection Logic
+
 To identify concentrated failed login activity within a short time window, I used:
 
 ```kql
