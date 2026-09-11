@@ -2,7 +2,7 @@
 
 ## Event ID
 
-`4688` — A New Process Has Been Created
+`4688` = A New Process Has Been Created
 
 ## Objective
 
@@ -21,7 +21,7 @@ SecurityEvent
 
 ## Findings
 
-The query returned a PowerShell process creation event matching the encoded-command detection criteria.
+The query returned a PowerShell process creation event matching the encoded command detection criteria.
 
 The event included the user account, computer name, PowerShell process path, command line, and parent process information for investigation.
 
