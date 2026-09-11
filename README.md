@@ -8,6 +8,10 @@ I used Windows Security Event logs and Kusto Query Language (KQL) to investigate
 
 The goal of this project is to simulate the investigation workflow of a Tier 1 SOC Analyst by reviewing logs, identifying suspicious activity, writing detection queries, and documenting findings.
 
+## Project Screenshot
+
+![Brute Force Detection Results](screenshots/brute-force-failed-logons.png)
+
 ## Technologies Used
 
 - Microsoft Azure
