@@ -2,13 +2,13 @@
 
 ## Detection
 
-Windows failed logon activity — Event ID `4625`
+Windows failed logon activity Event ID `4625`
 
 ## Summary
 
-Repeated failed Windows logon attempts were identified against Administrator-related accounts from multiple external IP addresses.
+Repeated failed Windows logon attempts were identified against Administrator related accounts from multiple external IP addresses.
 
-The volume and repetition of failed authentication attempts were consistent with automated brute-force activity.
+The volume and repetition of failed authentication attempts were consistent with automated brute force activity.
 
 ## Investigation
 
@@ -17,15 +17,15 @@ I reviewed failed logon events using Microsoft Azure Log Analytics and KQL.
 The investigation included:
 
 - Counting failed logon attempts by source IP address and account.
-- Reviewing first-seen and last-seen timestamps.
+- Reviewing first seen and last seen timestamps.
 - Examining detailed Event ID 4625 records.
 - Reviewing LogonType, failure reason, status, and substatus fields.
-- Investigating a high-volume source IP address.
-- Creating detection logic for repeated failed logons within a five-minute window.
+- Investigating a high volume source IP address.
+- Creating detection logic for repeated failed logons within a five minute window.
 
 ![Brute force failed logon results](../screenshots/brute-force-failed-logons.png)## IP Enrichment
 
-One high-volume source IP investigated was:
+One high volume source IP investigated was:
 
 `79.140.30.89`
 
@@ -47,20 +47,20 @@ SecurityEvent
 
 ## Alert Configuration
 
-A custom Azure Monitor log-search alert was configured with the name:
+A custom Azure Monitor log search alert was configured with the name:
 Possible Brute Force Attack
 
 ![Brute force alert rule configuration](../screenshots/brute-force-alert-rule-configuration.png)
 
 ![Brute force alert rule details](../screenshots/brute-force-alert-rule-details.png)
 
-The alert was designed to identify 10 or more failed Windows logon attempts from the same source IP and account within a five-minute window.
+The alert was designed to identify 10 or more failed Windows logon attempts from the same source IP and account within a five minute window.
 
 Severity: Warning
 
 ## Analyst Assessment
 
-The repeated failed logon activity, high attempt volume, and concentration against Administrator-related accounts indicate likely automated credential-guessing activity.
+The repeated failed logon activity, high attempt volume, and concentration against Administrator related accounts indicate likely automated credential guessing activity.
 No conclusion about successful compromise was made based only on the failed logon evidence.
 
 ## Recommended Response
