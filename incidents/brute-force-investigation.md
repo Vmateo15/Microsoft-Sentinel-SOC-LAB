@@ -25,6 +25,8 @@ The investigation included:
 
 ![Brute force failed logon results](../screenshots/brute-force-failed-logons.png)## IP Enrichment
 
+## IP Enrichement
+
 One high volume source IP investigated was:
 
 `79.140.30.89`
