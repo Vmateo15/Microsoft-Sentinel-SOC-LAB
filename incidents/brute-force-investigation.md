@@ -23,7 +23,7 @@ The investigation included:
 - Investigating a high-volume source IP address.
 - Creating detection logic for repeated failed logons within a five-minute window.
 
-## IP Enrichment
+![Brute force failed logon results](../screenshots/brute-force-failed-logons.png)## IP Enrichment
 
 One high-volume source IP investigated was:
 
@@ -33,6 +33,8 @@ The IP lookup showed the address was associated with JSC Ufanet and geolocated t
 
 IP geolocation alone does not confirm malicious intent, but it provided additional context for the investigation.
 
+![Brute force IP enrichment](../screenshots/brute-force-ip-enrichment.png)
+
 ## Detection Logic
 
 ```kql
@@ -41,11 +43,16 @@ SecurityEvent
 | summarize FailedAttempts = count() by IpAddress, Account, bin(TimeGenerated, 5m)
 | where FailedAttempts >= 10
 ```
+![Brute force detection logic](../screenshots/brute-force-detection-logic.png)
 
 ## Alert Configuration
 
 A custom Azure Monitor log-search alert was configured with the name:
 Possible Brute Force Attack
+
+![Brute force alert rule configuration](../screenshots/brute-force-alert-rule-configuration.png)
+
+![Brute force alert rule details](../screenshots/brute-force-alert-rule-details.png)
 
 The alert was designed to identify 10 or more failed Windows logon attempts from the same source IP and account within a five-minute window.
 
