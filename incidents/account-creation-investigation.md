@@ -37,6 +37,8 @@ SecurityEvent
 The query returned user account creation events for SOC-LAB-USER.
 The events showed the account that performed the action, the newly created target account, the affected computer, and the Windows activity description.
 
+![New user account creation investigation](../screenshots/account-creation-detection.png)
+
 ## Analyst Assessment
 
 New user account creation can be legitimate administrative activity, but unexpected account creation may indicate unauthorized access or persistence.
