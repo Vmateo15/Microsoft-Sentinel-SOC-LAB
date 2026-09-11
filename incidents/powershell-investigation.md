@@ -2,11 +2,11 @@
 
 ## Detection
 
-Windows process creation activity — Event ID `4688`
+Windows process creation activity Event ID `4688`
 
 ## Summary
 
-A PowerShell process creation event was identified that matched encoded-command detection criteria.
+A PowerShell process creation event was identified that matched encoded command detection criteria.
 
 Encoded PowerShell commands can be legitimate, but they may also be used to obscure command execution and should be reviewed.
 
@@ -38,7 +38,7 @@ SecurityEvent
 
 ## Findings
 
-The query returned a PowerShell process creation event matching the encoded-command detection criteria.
+The query returned a PowerShell process creation event matching the encoded command detection criteria.
 
 The event included the user account, affected computer, PowerShell process path, command line, and parent process information.
 
