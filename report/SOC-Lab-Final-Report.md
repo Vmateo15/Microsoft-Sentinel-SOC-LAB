@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This project demonstrates a hands-on Security Operations Center (SOC) investigation workflow using Microsoft Azure, Log Analytics, Windows Security Event logs, KQL, and Microsoft Sentinel.
+This project demonstrates a hands on Security Operations Center (SOC) investigation workflow using Microsoft Azure, Log Analytics, Windows Security Event logs, KQL, and Microsoft Sentinel.
 
 A Windows virtual machine was monitored through a Log Analytics workspace. Security events were investigated to identify failed authentication activity, suspicious PowerShell execution, new user account creation, privileged group membership changes, and scheduled task creation.
 
@@ -21,15 +21,15 @@ A Windows virtual machine was monitored through a Log Analytics workspace. Secur
 
 ### Event ID 4625 - Failed Logon
 
-Repeated failed Windows logon attempts were detected against Administrator-related accounts from multiple external IP addresses.
+Repeated failed Windows logon attempts were detected against Administrator related accounts from multiple external IP addresses.
 
 One source IP generated more than 3,000 failed authentication attempts.
 
-The activity was consistent with automated credential-guessing behavior.
+The activity was consistent with automated credential guessing behavior.
 
 ### Event ID 4688 - Process Creation
 
-A PowerShell process creation event was identified using encoded-command syntax.
+A PowerShell process creation event was identified using encoded command syntax.
 
 The activity was reviewed because encoded PowerShell commands can be used to obscure command execution.
 
@@ -60,11 +60,11 @@ Failed authentication activity was analyzed using KQL.
 The investigation included:
 
 - Counting failed logon attempts by IP address and account.
-- Reviewing first-seen and last-seen timestamps.
+- Reviewing first seen and last seen timestamps.
 - Examining detailed Event ID 4625 records.
 - Reviewing LogonType, failure reason, status, and substatus.
-- Investigating a high-volume source IP.
-- Creating detection logic for repeated failed logons within a five-minute window.
+- Investigating a high volume source IP.
+- Creating detection logic for repeated failed logons within a five minute window.
 
 One investigated source IP was:
 
@@ -87,7 +87,7 @@ This detection identifies source IP and account combinations with 10 or more fai
 
 ## Alert Configuration
 
-A custom Azure Monitor log-search alert was configured.
+A custom Azure Monitor log search alert was configured.
 
  Alert name:
 
@@ -101,7 +101,7 @@ The alert was designed to detect 10 or more failed Windows logon attempts from t
 
 ## Analyst Assessment
 
-The failed authentication activity showed high-volume and repeated attempts against Administrator-related accounts, indicating likely automated credential guessing.
+The failed authentication activity showed high volume and repeated attempts against Administrator related accounts, indicating likely automated credential guessing.
 The PowerShell, account creation, privileged group membership, and scheduled task events demonstrated additional Windows behaviors that a SOC analyst may investigate when reviewing potentially suspicious activity.
 Each event was analyzed using Windows Security Event logs and KQL to determine the relevant account, computer, process, group, or task information.
 
@@ -137,7 +137,7 @@ KQL querying
 
 Windows Event ID analysis
 
-Brute-force detection
+Brute force detection
 
 PowerShell investigation
 
