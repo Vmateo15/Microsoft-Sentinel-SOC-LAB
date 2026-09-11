@@ -101,6 +101,13 @@ Microsoft-Sentinel-SOC-LAB/
 └── README.md
 ```
 
+ ## Key Takeaways
+
+This project gave me hands on experience investigating Windows Security Events using Azure Log Analytics and KQL.
+
+I practiced identifying suspicious authentication activity, PowerShell execution, new account creation, privileged group changes, and scheduled task persistence.
+
+I also created detection logic, reviewed event details, performed basic IP enrichment, documented analyst findings, and developed recommended response actions similar to a Tier 1 SOC workflow.
 ## Disclaimer
 
 This project was performed in a controlled lab environment for cybersecurity education and SOC analyst training.
