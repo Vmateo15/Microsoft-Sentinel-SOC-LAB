@@ -2,7 +2,7 @@
 
 ## Event ID
 
-`4732` — A Member Was Added to a Security-Enabled Local Group
+`4732` = A Member Was Added to a Security Enabled Local Group
 
 ## Objective
 
