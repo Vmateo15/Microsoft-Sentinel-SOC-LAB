@@ -2,7 +2,7 @@
 
 ## Detection
 
-Windows scheduled task creation activity — Event ID `4698`
+Windows scheduled task creation activity Event ID `4698`
 
 ## Summary
 
