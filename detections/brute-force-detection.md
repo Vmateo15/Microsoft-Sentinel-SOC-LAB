@@ -58,6 +58,8 @@ The alert logic was designed to identify 10 or more failed Windows logon attempt
 
 **Severity:** Warning
 
+![Brute Force Alert Rule Details](../screenshots/brute-force-alert-rule-details.png)
+
 ## Analyst Assessment
 
 The volume and repetition of failed logon attempts indicate likely automated credential guessing against the exposed Windows system.
