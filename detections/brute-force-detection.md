@@ -44,7 +44,7 @@ The IP lookup identified the address as associated with JSC Ufanet and geolocate
 
 IP geolocation alone does not prove malicious intent, but it provided additional context during the investigation.
 
-![Brute Force IP Enrichment](../screenshots/brute-force-ip-enrichment.png)## Detection Logic
+![Brute Force IP Enrichment](../screenshots/brute-force-ip-enrichment.png)
 
 ## Detection Logic
 
