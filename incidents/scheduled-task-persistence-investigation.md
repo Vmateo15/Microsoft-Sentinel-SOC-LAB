@@ -38,6 +38,8 @@ SecurityEvent
 The query returned a scheduled task creation event associated with SOC-LAB-PERSISTENCE.
 The event showed the affected computer, the account associated with the event, the Windows activity description, and the scheduled task event data.
 
+![Scheduled Task Persistence Results](../screenshots/scheduled-task-persistence-results.png)
+
 ## Analyst Assessment
 
 Scheduled tasks can be used for legitimate administration, but unexpected scheduled task creation may indicate persistence.
