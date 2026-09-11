@@ -2,7 +2,7 @@
 
 ## Detection
 
-Windows local security group membership change -Event ID `4732`
+Windows local security group membership change -- Event ID `4732`
 
 ## Summary
 
