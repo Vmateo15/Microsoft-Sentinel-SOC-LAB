@@ -56,7 +56,6 @@ SecurityEvent
 ```
 This flags cases where the same source IP and account combination has 10 or more failed logon attempts within five minutes.
 
-This flags cases where the same source IP and account combination has 10 or more failed logon attempts within five minutes.
 ![Brute Force Detection Logic](../screenshots/brute-force-detection-logic.png)
 
 ## Alert Rule Configuration
