@@ -23,6 +23,8 @@ The query returned local security group membership change events.
 The results showed membership changes involving local groups including Builtin\Users and Builtin\Administrators.
 The events included the account that performed the action, the target group, the affected computer, and the Windows activity description.
 
+![Privileged Group Membership Results](../screenshots/privileged-group-membership-results.png)
+
 ## Analyst Assessment
 
 Changes to privileged local groups can be legitimate administrative activity, but unexpected additions to groups such as Builtin\Administrators may indicate privilege escalation or unauthorized access.
