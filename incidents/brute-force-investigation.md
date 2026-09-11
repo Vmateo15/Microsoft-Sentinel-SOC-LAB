@@ -50,6 +50,8 @@ SecurityEvent
 A custom Azure Monitor log search alert was configured with the name:
 Possible Brute Force Attack
 
+The alert configuration was documented but not deployed because enabling it would have created recurring Azure charges.
+
 ![Brute force alert rule configuration](../screenshots/brute-force-alert-rule-configuration.png)
 
 ![Brute force alert rule details](../screenshots/brute-force-alert-rule-details.png)
