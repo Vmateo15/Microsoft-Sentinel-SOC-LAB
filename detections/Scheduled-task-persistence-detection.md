@@ -23,9 +23,7 @@ SecurityEvent
 The query returned a scheduled task creation event associated with SOC-LAB-PERSISTENCE.
 The event showed the affected computer, the Windows activity description, and the scheduled task event data.
 
-![Privileged group membership change detected in Azure Log Analytics](../screenshots/privileged-group-membership-results.png)
-
-## Analyst Assessment
+![Scheduled Task Persistence Results](../screenshots/scheduled-task-persistence-results.png)
 
 Scheduled tasks are commonly used for legitimate automation, but they can also be abused to maintain persistence on a system.
 Because the query identified creation of the SOC-LAB-PERSISTENCE scheduled task, the activity should be reviewed to determine whether the task was expected and authorized.
