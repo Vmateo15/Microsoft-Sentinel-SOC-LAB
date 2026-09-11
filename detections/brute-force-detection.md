@@ -22,13 +22,19 @@ The query showed repeated failed authentication attempts against Administrator-r
 
 One source IP generated more than 3,000 failed logon attempts, which is highly suspicious and consistent with automated brute-force activity.
 
+![Brute Force Failed Logons](../screenshots/brute-force-failed-logons.png)
+
 ## Investigation Details
 
 I reviewed the timing and characteristics of the failed authentication activity to determine whether the behavior was isolated or repeated over time.
 
 A first-seen and last-seen query showed sustained failed authentication attempts from multiple source IP addresses. One source generated thousands of failed logon attempts during the observed period.
 
+![Brute Force First and Last Seen Analysis](../screenshots/brute-force-first-last-seen.png)
+
 Detailed Event ID 4625 records showed LogonType 3, indicating network logon attempts. The events also included failure reason, status, and substatus fields that helped confirm repeated unsuccessful authentication activity.
+
+![Failed Logon Event Details](../screenshots/failed-logon-event-details.png)
 
 ## IP Enrichment
 
@@ -38,7 +44,7 @@ The IP lookup identified the address as associated with JSC Ufanet and geolocate
 
 IP geolocation alone does not prove malicious intent, but it provided additional context during the investigation.
 
-## Detection Logic
+![Brute Force IP Enrichment](../screenshots/brute-force-ip-enrichment.png)## Detection Logic
 
 To identify concentrated failed login activity within a short time window, I used:
 
@@ -50,11 +56,16 @@ SecurityEvent
 ```
 This flags cases where the same source IP and account combination has 10 or more failed logon attempts within five minutes.
 
+This flags cases where the same source IP and account combination has 10 or more failed logon attempts within five minutes.
+![Brute Force Detection Logic](../screenshots/brute-force-detection-logic.png)
+
 ## Alert Rule Configuration
 
 I configured the settings for a custom log search alert named `Possible Brute Force Attack`.
 
 The alert logic was designed to identify 10 or more failed Windows logon attempts from the same source IP and account within a five-minute window.
+
+![Brute Force Alert Rule Configuration](../screenshots/brute-force-alert-rule-configuration.png)
 
 **Severity:** Warning
 
