@@ -25,6 +25,8 @@ The query returned a PowerShell process creation event matching the encoded-comm
 
 The event included the user account, computer name, PowerShell process path, command line, and parent process information for investigation.
 
+![Suspicious PowerShell encoded command detection](../screenshots/powershell-encoded-command-detection.png)
+
 ## Analyst Assessment
 
 Encoded PowerShell commands can be used legitimately, but they are also commonly associated with obfuscated or suspicious command execution.
